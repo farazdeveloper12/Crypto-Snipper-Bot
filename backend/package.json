@@ -1,0 +1,47 @@
+{
+  "name": "crypto-sniper-bot-backend",
+  "version": "1.0.0",
+  "description": "Backend for Crypto Sniper Bot",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --max-old-space-size=8192 src/server.js",
+    "dev": "nodemon --max-old-space-size=8192 src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-trade": "node src/test-trade.js",
+    "check-env": "node src/check-env.js"
+  },
+  "dependencies": {
+    "@jup-ag/api": "^6.0.42",
+    "@metaplex-foundation/js": "^0.20.1",
+    "@raydium-io/raydium-sdk": "^1.3.1-beta.58",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.2",
+    "axios": "^1.9.0",
+    "bcryptjs": "^2.4.3",
+    "bs58": "^6.0.0",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^7.2.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "node-fetch": "^3.3.2",
+    "redis": "^4.6.15",
+    "socket.io": "^4.7.5",
+    "web3": "^4.16.0",
+    "winston": "^3.17.0",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
